@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+</head>
+<body>
+
+    <h2>01 - Aula Tags Form</h2>
+    <form  name="signup" method="post" action="#">
+        Nome: <input type="text" name="name">
+        Idade: <input type="number" name="idade">
+        Senha: <input type="password" name="senha">
+        <button type="submit">Enviar</button>
+    </form><br>
+
+    <h2>02 - Aula Tag input e seus tipos</h2>
+    <form action="">
+        <label>Text: </label> <input type="text" /><br>
+        <label>Number: </label> <input type="number" min="0" max="99" /><br>       
+        <label>Range: </label> <input type="range" min="0" max="100" /><br>
+        <label>Color: </label> <input type="color" /><br>
+        <label>Email: </label> <input type="email" /><br>
+        <label>URL: </label> <input type="url" /><br>
+        <label>Date: </label> <input type="date" /><br>
+        <label>Week: </label> <input type="week"/><br>
+        <label>Month: </label> <input type="month" /><br>
+        <label>checkbox: </label> <input type="checkbox" /><br>
+        <label>Radio: </label> <input type="radio" /><br>
+        <label>Hidden: </label> <input type="hidden" /><br>
+        <label>File: </label> <input type="file" multiple/><br>
+        <label>Search: </label> <input type="search" /><br>
+        <label>Button: </label> <input type="button" value="Enviar" /><br>
+    </form>
+
+    <h2>03 - Aula Checkbox e Radio</h2>
+    <form method="post"> <!--Post para ententender a lista de opcionais, no GET só pegaria o ultimo -->
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p> Quais opcionais você deseja? </p>
+        <!--Colchetes são para indicar uma lista e não pegar apenas o ultimo valor atualizado-->
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br> 
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim"> Sim<br><!--Names iguais o radio so permite um -->
+        <input type="radio" name="borda" value="nao"> Não<br>
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco"> Suco<br>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante<br>
+        <input type="radio" name="bebida" value="agua"> Água<br>
+        <input type="radio" name="bebida" value="nenhum"> Nenhum<br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+
+
+    <h2>04- Aula Button e seus tipos</h2>
+<form name="signup" onsubmit="" method="post" action="#">
+    Nome*: <input type="text" name="name"><br>
+    Idade*: <input type="number" name="idade"><br>
+    Senha*: <input type="password" name="senha"><br>
+    <button type="submit">Submit</button>
+    <button type="button" onclick="alert('Cliquei aqui')">Clicável</button>
+    <button type="reset">Reset</button>
+</form><br>
+
+<h2>05- Aula Select e seus tipos</h2>
+<form name="signup" onsubmit="" method="post" action="#">
+    Nome*: <input type="text" name="name"><br>
+<label>Cargo: </label>   
+ <select name="role" multiple>
+    <option value="">Selecione o cargo</option>
+    <option value="gerente">Gerente</option>
+    <option value="diretor">Diretor</option>
+    <option value="presidente">Presidente</option>
+   </select>
+   
+    <button type="submit">Submit</button>
+   
+</form><br>
+<h2>06-Aula Textarea</h2>
+<textarea rows="10" cols="50"></textarea>
+
+<form>
+<h2>07-Formatando textos</h2>
+
+<i>Programe</i> o seu futuro <br>
+<b>Programe</b> o seu futuro <br>
+<u>Programe</u> o seu futuro <br>
+<strong>Programe</strong> o seu futuro <br>
+<mark>Programe</mark> o seu futuro<br>
+Programe<sup>*</sup> o seu futuro <br>
+10<sup>2</sup> <br>
+10<sub>2</sub> <br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book.</p>
+<blockquote>Programe o seu futuro </blockquote>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book.</p>
+
+
+<font color="red" face="'Trebuchet MS', Arial, Tahoma">Programe</font> o seu futuro <br>
+
+</form>
+
+
+
+</body>
+</html>
