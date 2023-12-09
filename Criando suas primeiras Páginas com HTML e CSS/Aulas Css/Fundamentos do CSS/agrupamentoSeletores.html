@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Seletores</title>
+</head>
+<body>
+    <style>
+        h1,p,div, .texto{
+            color: red;
+        }
+        p.text{
+            color:blue;
+        }
+        .text.teste{
+            color:rebeccapurple;
+        }
+    </style>
+</body>
+
+<h1>Agrupamento de Seletores</h1>
+<p>Podemos aplicar as mesmas regras CSS para varios seletores diferentes. </p>
+<div>Assim não precisamos ficar copiando e colando os mesmos códigos para todos.</div>
+<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione, voluptates praesentium, iste culpa, illum numquam eius veritatis tempora fuga ullam. Sequi quo fugiat soluta itaque nam culpa repellendus at.</p>
+<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione, voluptates praesentium, iste culpa, illum numquam eius veritatis tempora fuga ullam. Sequi quo fugiat soluta itaque nam culpa repellendus at.</p>
+<p class="text teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione, voluptates praesentium, iste culpa, illum numquam eius veritatis tempora fuga ullam. Sequi quo fugiat soluta itaque nam culpa repellendus at.</p>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de dimensionamento e espaçamento</title>
+
+    <style>
+        /*
+        * Propriedades Básicas do CSS
+        * width: largura  width = largura + borda + padding
+        * height: altura
+        * max-width e min-width
+        * max-height e min-height
+        * Margin: espaçamento por fora dos elementos
+            -Um valor: aplica nos quatro lados
+            -Dois valores: em cima e em baixo
+            -Três valores: em cima, lados e embaixo
+            -Quato valores: cima,direita, baixo, esquerda (margin: 20px 30px 10px 10px)
+            É possível aplicar valores negativos
+            margin-top
+            margin-bot 
+            margin-left
+            margin-righ
+        * Padding: Aplica um espaçamento interno
+        * box-sizing
+            -content-box: soma o padding e as bordas à largura
+            -border-box: redimensiona para manter a largura e a altura definidas
+        */
+        div{
+            background: lightblue;
+            /* 
+             * auto -> Fica de acordo com o tamanho do elemento
+             * initial -> Aplica um valor padrao
+             * inherit -> Utiliza os mesmos valores da pai
+             */
+            width: 200px; 
+            height: 100px;
+            min-width: 200px;
+            max-width: 500px;
+        }
+
+        #elemento-01{
+            background: orange;
+            margin: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #elemento-02{
+            background: purple;
+            margin-top: 10px;
+            margin-left: 25px;
+            margin-right: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>Trilha de CSS</div>
+
+    <div id="elemento-01"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum animi facilis eligendi minima cumque minus quae, earum iure consectetu.</div>
+    <div id="elemento-02"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sequi veniam. Corrupti, ipsa, esse id sequi natus est quibusdam  </div>
+</body>
+</html>
