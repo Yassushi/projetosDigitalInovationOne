@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #contain{
+            object-fit: contain;
+        }
+
+        #cover{
+            object-fit: cover;
+        }
+
+        #none{
+            object-fit: none;
+        }
+
+        #scale-down{
+            object-fit: scale-down;
+        }
+
+        #object-position-example{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 20px 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code></h1>
+    <code>object-fit: fill;</code> (padrão)
+    <div>
+        <img src="https://hermes.dio.me/articles/cover/364fb700-4c6f-482b-91fe-6c66b31ae8a1.jpg" id="fill" alt="">
+    </div>
+    <br>
+    <code>object-fit: contain;</code>
+    <div>
+        <img src="https://hermes.dio.me/articles/cover/364fb700-4c6f-482b-91fe-6c66b31ae8a1.jpg" id="contain" alt="">
+    </div>
+    <br>
+    <code>object-fit: cover;</code>
+    <div>
+        <img src="https://hermes.dio.me/articles/cover/364fb700-4c6f-482b-91fe-6c66b31ae8a1.jpg" id="cover" alt="">
+    </div>
+    <br>
+    <code>object-fit: none;</code>
+    <div>
+        <img src="https://hermes.dio.me/articles/cover/364fb700-4c6f-482b-91fe-6c66b31ae8a1.jpg" id="none" alt="">
+    </div>
+    <br>
+    <code>object-fit: scale-down;</code>
+    <div>
+        <img src="https://hermes.dio.me/articles/cover/364fb700-4c6f-482b-91fe-6c66b31ae8a1.jpg" id="scale-down" alt="">
+    </div>
+
+    <h1><code>object-position</code></h1>
+
+    <div >
+        <img id="object-position-example" src="https://hermes.dio.me/articles/cover/364fb700-4c6f-482b-91fe-6c66b31ae8a1.jpg"  >
+    </div>
+
+</body>
+</html>
